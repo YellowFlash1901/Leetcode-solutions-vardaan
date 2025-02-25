@@ -8,7 +8,9 @@ class Solution(object):
         ans = {}
         for i in range(0,len(nums)):
             complement = target - nums[i]
+            print("complement",complement)
             if complement in ans:
                 return ans[complement], i
             
             ans[nums[i]] = i
+            print("key",nums[i],"value",i,"ans",ans)
